@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ぐるーぷほーむ樹林</title>
+  <meta name="description"
+    content="「ぐるーぷほーむ樹林」は石狩市緑苑台に位置し、静かで自然に恵まれたホームです。日々の介助はもちろん、一人ひとりにあわせたケアを実施し認知症を抱えた方が穏やかで落ち着いた日々を送ることができます。">
+  <meta name=”keywords” content=”ぐるーぷほーむ樹林,グループホーム,樹林,石狩,石狩市,緑苑台”>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="default.css">
+</head>
+
+<body>
+
+  <div id="splash">
+    <img class="splash-logo" src="images/jurin-tree2.png" alt="ぐるーぷほーむ樹林のロゴ">
+    <div id="splash_text"></div>
+  </div>
+
+  <header id="header" class="DownMove">
+    <a href="">
+      <h1>ぐるーぷほーむ樹林</h1>
+    </a>
+    <nav>
+      <ul id="g-navi">
+        <li><a href="about">樹林について</a></li>
+        <li><a href="service">サービス内容</a></li>
+        <li><a href="posts">おしらせ・ブログ</a></li>
+        <span>
+          <li><a href="recruit">採用情報</a></li>
+        </span>
+        <span>
+          <li><a href="contact">お問い合わせ</a></li>
+        </span>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+
+      <section id="hero">
+        <div>
+          <h2>一緒に、一歩ずつ</h2>
+          <p>〜 新たな家族と共に未来へ 〜</p>
+        </div>
+        <img src="images/sign.png" alt="樹林の看板">
+      </section>
+
+      <section id="intro">
+        <div id="particles-js">
+
+          <div class="intro-wrap">
+            <h2 class="content-title">ぐるーぷほーむ樹林について</h2>
+
+            <section class="intro-top">
+              <img src="images/27772935_s.jpg" alt="">
+              <div>
+                <h3>皆に安心と充実を</h3>
+                <p>私たちは、<br>
+                  「人間らしさと尊厳を尊重し、共に豊かな人生を築くこと」<br>
+                  をビジョンとして<br>
+                  入居者が安心して自分らしい生活を営むことができる場所をつくり、<br>
+                  豊かなコミュニティと家庭的な雰囲気の中で、充実した暮らしができるよう<br>
+                  日々全力で取り組んでいます。<br>
+                  <br>
+                  入居者一人ひとりのニーズに合わせ、<br>
+                  専門的なケアと思いやりのあるスタッフがサポートします。<br>
+
+                  私たちと共に未来へ進みませんか？
+                </p>
+                <a href="about" class="btnarrow">樹林について詳しく見る</a>
+              </div>
+            </section>
+
+            <section class="intro-bottom">
+              <img class="intro-bottom-img1" src="images/27765628_s.jpg" alt="笑顔の介護職員">
+              <img class="intro-bottom-img2" src="images/22284977_s.jpg" alt="入居者と職員">
+              <div>
+                <h3>樹林ならではの穏やかな生活</h3>
+                <p>
+                  水分摂取の目標を体重の3%に設定し毎日しっかり水分をとってもらい、
+                  便秘解消や体調維持を心がけています。
+                </p>
+                <p>
+                  毎食後の口腔ケアを実施。物が飲み込みにくくなる、
+                  いわゆる「えん下障害」の予防に努めています。
+                </p>
+                <p>
+                  入居者様一人ひとりの能力などを見極めながら、
+                  日常生活において適切な見守りや介助を行っています。
+                </p>
+                <a href="about" class="btnarrow">サービス内容を詳しく見る</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="slide-show">
+        <ul class="slider">
+          <li><img src="images/26653885_s.jpg" alt=""></li>
+          <li><img src="images/27770753_m.jpg" alt=""></li>
+          <li><img src="images/3040738_s.jpg" alt=""></li>
+          <li><img src="images/3081106_s.jpg" alt=""></li>
+          <li><img src="images/22284977_s.jpg" alt=""></li>
+          <!--/slider-->
+        </ul>
+      </section>
+      <section id="greeting">
+        <h2 class="content-title">代表挨拶</h2>
+        <div class="greeting-wrap">
+          <p>わたしたちは、<br>
+            介護業界のイメージ向上を目指し、<br>
+            日々努力を重ねています。<br>
+            この重要な使命において、<br>
+            私たちは皆様とともに歩んでいることを誇りに思います。<br>
+            <br>
+            介護業界は、高齢化社会の進展と共に<br>
+            ますます重要になっています。<br>
+            私たちは、この重要な分野で変革をもたらし、<br>
+            高品質な介護サービスを提供し、<br>
+            高齢者やその家族にとって希望と安心を提供することを<br>
+            使命としています。<br>
+            <br>
+            ぐるーぷほーむ樹林 代表 [名前]
+          </p>
+          <img src="images/27770753_l.jpg" alt="ぐるーぷほーむ樹林代表">
+        </div>
+      </section>
+
+      <section id="posts">
+        <h2 class="content-title">樹林からのお知らせ</h2>
+        <img src="images/スクリーンショット 2023-11-26 18.01.17.png" alt="">
+        <a href="about" class="btnarrow">お知らせ一覧を見る</a>
+      </section>
+
+      <section id="to-contact">
+        <div>
+          <h3>ぐるーぷほーむ樹林へのご相談、お問い合わせ</h3>
+          <p>ご利用に関するご相談、施設見学、資料のご請求は、こちらからお気軽にお問い合わせください。</p>
+          <a href="about" class="btnarrow2">お問い合わせフォーム</a>
+          <p>お急ぎの場合は電話での受付も可能です。</p>
+          <p>電話でのお問い合わせ：０００−００００−００００</p>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer id="footer">
+    <img src="images/jurin-tree1.png" alt="">
+    <nav>
+      <ul id="f-navi">
+        <li><a href="/">トップページ</a></li>
+        <li><a href="about">樹林について</a></li>
+        <li><a href="service">サービス内容</a></li>
+        <li><a href="posts">おしらせ・ブログ</a></li>
+        <li><a href="recruit">採用情報</a></li>
+        <li><a href="contact">お問い合わせ</a></li>
+      </ul>
+      <ul id="f-navi-other">
+        <li><a href="policy">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+    <div class="footer-wrap">
+      <div class="footer-content">
+        <h3>ぐるーぷほーむ樹林</h3>
+        <p>
+          電話番号:050-8891-7200<br>
+          住所:〒061-3223 北海道石狩市緑苑台東三条3-255<br>
+          <br>
+          © 有限会社 共生會
+        </p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6755.663494839289!2d141.3438768089028!3d43.16419946553957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b25e2eb9e4cc9%3A0x82fffa425fd68efa!2z44Kw44Or44O844OX44Ob44O844Og5qi55p6X!5e0!3m2!1sja!2sjp!4v1700993598363!5m2!1sja!2sjp"
+        width="450" height="230" style="border:1px solid #3f3f3f;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
