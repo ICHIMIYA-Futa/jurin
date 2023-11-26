@@ -354,13 +354,13 @@ nav ul span {
   width: 30vw;
   margin-left: 10vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .intro-wrap .intro-bottom .intro-bottom-img1 {
   height: 400px;
   width: 450px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 5vh;
   left: 50vw;
@@ -369,7 +369,7 @@ nav ul span {
   height: 350px;
   width: 450px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 40vh;
   left: 55vw;
@@ -470,7 +470,7 @@ nav ul span {
   width: 35vw;
   height: 40vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 12vw 0 3vw;
 }
 
@@ -491,7 +491,8 @@ nav ul span {
 }
 
 #to-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/IMG_1985.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/IMG_1985.JPG);
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -559,4 +560,4 @@ nav ul span {
 }
 #footer .footer-wrap div p {
   line-height: 40px;
-}/*# sourceMappingURL=default.css.map */
+} /*# sourceMappingURL=default.css.map */
