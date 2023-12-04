@@ -1246,7 +1246,7 @@ nav ul li:nth-child(5) {
   width: 48px;
   display: inline-block;
   text-align: center;
-  background: #545454;
+  background: #69B0AC;
   color: #fff;
   font-size: 14px;
 }
@@ -1270,7 +1270,7 @@ nav ul li:nth-child(5) {
   flex: 1;
   width: 100%;
   max-width: 410px;
-  background: #eaedf2;
+  background: #f2f0e9;
   font-size: 18px;
 }
 
@@ -1316,7 +1316,7 @@ nav ul li:nth-child(5) {
   width: 280px;
   display: block;
   letter-spacing: 0.05em;
-  background: #545454;
+  background: #69B0AC;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
