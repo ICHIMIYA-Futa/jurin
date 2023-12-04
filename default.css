@@ -10,6 +10,10 @@ body {
   font-size: 1.4rem;
 }
 
+img {
+  border-radius: 15px;
+}
+
 *,
 *::before,
 *::after {
@@ -22,8 +26,13 @@ body {
   clear: both;
 }
 
+h1 {
+  font-family: "Zen Maru Gothic", serif;
+}
+
 h2 {
   font-size: 4rem;
+  font-family: "Zen Maru Gothic", serif;
 }
 
 .content-title::after {
@@ -35,12 +44,13 @@ h2 {
   height: 5px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #86c9be;
+  background-color: #69B0AC;
   border-radius: 2px;
 }
 
 h3 {
   font-size: 3rem;
+  font-family: "Zen Maru Gothic", serif;
 }
 
 p {
@@ -69,7 +79,7 @@ p {
   /*矢印の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/
-  border: 2px solid #86c9be;
+  border: 2px solid #69B0AC;
   padding: 8px 30px;
   display: inline-block;
   text-align: center;
@@ -82,7 +92,7 @@ p {
 }
 
 .btnarrow:hover {
-  background: #86c9be;
+  background: #69B0AC;
   color: #f2f0e9;
 }
 
@@ -96,7 +106,7 @@ p {
   /*下線の形状*/
   width: 40px;
   height: 1px;
-  background: #86c9be;
+  background: #69B0AC;
   /*アニメーションの指定*/
   transition: all 0.2s linear;
 }
@@ -110,7 +120,7 @@ p {
   /*矢印の形状*/
   width: 1px;
   height: 14px;
-  background: #86c9be;
+  background: #69B0AC;
   transform: skewX(45deg);
   /*アニメーションの指定*/
   transition: all 0.2s linear;
@@ -129,7 +139,7 @@ p {
   /*矢印の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/
-  border: 2px solid #86c9be;
+  border: 2px solid #D0596E;
   padding: 8px 30px;
   display: inline-block;
   text-align: center;
@@ -138,7 +148,7 @@ p {
   outline: none;
   /*アニメーションの指定*/
   transition: all 0.2s linear;
-  background-color: #86c9be;
+  background-color: #D0596E;
 }
 
 .btnarrow2:hover {
@@ -156,7 +166,7 @@ p {
   /*下線の形状*/
   width: 40px;
   height: 1px;
-  background: #86c9be;
+  background: #D0596E;
   /*アニメーションの指定*/
   transition: all 0.2s linear;
 }
@@ -170,7 +180,7 @@ p {
   /*矢印の形状*/
   width: 1px;
   height: 14px;
-  background: #86c9be;
+  background: #D0596E;
   transform: skewX(45deg);
   /*アニメーションの指定*/
   transition: all 0.2s linear;
@@ -192,7 +202,7 @@ p {
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: rgb(134, 201, 190);
+  background: #69B0AC;
   text-align: center;
   color: #f2f0e9;
 }
@@ -213,7 +223,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #86c9be;
+  background: #69B0AC;
   color: #f2f0e9;
   text-align: center;
   padding: 20px;
@@ -253,6 +263,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 nav ul li a {
@@ -261,12 +272,20 @@ nav ul li a {
   padding: 10px;
   margin: 0 10px;
   font-size: 1.7rem;
+  line-height: 60px;
 }
 
-nav ul span {
-  background-color: #f2f0e9;
-  color: #86c9be;
+nav ul li {
+  color: white;
   margin: 0 10px;
+}
+nav ul li:nth-child(4) {
+  background-color: #D0596E;
+  color: white;
+}
+nav ul li:nth-child(5) {
+  background-color: #D0596E;
+  color: white;
 }
 
 #hero {
@@ -315,6 +334,7 @@ nav ul span {
   width: 100vw;
   top: 200px;
   z-index: 1 h2;
+  z-index-text-align: center;
 }
 .intro-wrap .intro-top {
   position: absolute;
@@ -353,13 +373,13 @@ nav ul span {
   width: 30vw;
   margin-left: 10vw;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .intro-wrap .intro-bottom .intro-bottom-img1 {
   height: 400px;
   width: 450px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 5vh;
   left: 50vw;
@@ -368,7 +388,7 @@ nav ul span {
   height: 350px;
   width: 450px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 40vh;
   left: 55vw;
@@ -377,7 +397,7 @@ nav ul span {
   position: absolute;
   text-align: center;
   margin-top: 100px;
-  right: 55%;
+  right: 50%;
 }
 .intro-wrap .intro-bottom div h3 {
   margin-bottom: 40px;
@@ -391,14 +411,14 @@ nav ul span {
   display: inline-block;
   width: 700px;
   height: 10px;
-  border-bottom: 3px solid #86c9be;
+  border-bottom: 3px solid #69B0AC;
   position: relative;
   left: -50px;
 }
 .intro-wrap .intro-bottom div p:nth-child(2)::before {
   content: "1";
   display: inline-block;
-  background-color: #86c9be;
+  background-color: #69B0AC;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -410,7 +430,7 @@ nav ul span {
 .intro-wrap .intro-bottom div p:nth-child(3)::before {
   content: "2";
   display: inline-block;
-  background-color: #86c9be;
+  background-color: #69B0AC;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -422,7 +442,7 @@ nav ul span {
 .intro-wrap .intro-bottom div p:nth-child(4)::before {
   content: "3";
   display: inline-block;
-  background-color: #86c9be;
+  background-color: #69B0AC;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -448,6 +468,10 @@ nav ul span {
   /*スライド左右の余白調整*/
 }
 
+#slide-show ul {
+  padding: 0;
+}
+
 #greeting {
   text-align: center;
   background-color: white;
@@ -469,7 +493,7 @@ nav ul span {
   width: 35vw;
   height: 40vw;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin: 0 12vw 0 3vw;
 }
 
@@ -490,8 +514,7 @@ nav ul span {
 }
 
 #to-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/IMG_1985.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/IMG_1985.JPG);
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -523,6 +546,8 @@ nav ul span {
 }
 #footer nav {
   margin: 10px 0;
+  background-color: none;
+  color: #3f3f3f;
 }
 #footer nav::before {
   content: "";
@@ -546,6 +571,10 @@ nav ul span {
 #footer nav ul {
   margin: 30px 0;
 }
+#footer nav ul li {
+  color: #3f3f3f;
+  background-color: #f2f0e9;
+}
 #footer .footer-wrap {
   display: flex;
   justify-content: center;
@@ -559,4 +588,582 @@ nav ul span {
 }
 #footer .footer-wrap div p {
   line-height: 40px;
-} /*# sourceMappingURL=default.css.map */
+}
+
+#page-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/22284973_s.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 260px;
+  font-size: 6rem;
+  font-family: "Zen Maru Gothic", serif;
+  color: white;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: #D0596E rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+#philosophy {
+  text-align: center;
+  margin-top: 200px;
+  transform: translateY(10px);
+}
+#philosophy .philosophy-wrap {
+  background-color: white;
+  transform: translateY(-10px);
+}
+#philosophy .philosophy-div1 {
+  padding: 30px 0;
+  transform: translateY(-10px);
+}
+#philosophy .philosophy-div1 h2 {
+  margin: 50px;
+}
+#philosophy .philosophy-div1 p {
+  text-align: center;
+  display: inline-block;
+  max-width: 70vw;
+}
+#philosophy .philosophy-div2 {
+  transform: translateY(-10px);
+}
+#philosophy .philosophy-div2 h3 {
+  margin: 0 0 50px 0;
+}
+#philosophy .philosophy-div2 div {
+  margin: 16px auto;
+  text-align: center;
+  display: block;
+}
+#philosophy .philosophy-div2 div p {
+  text-align: left;
+  display: inline-block;
+  max-width: 70vw;
+}
+#philosophy .philosophy-div2:before {
+  content: "";
+  width: 70vw;
+  border: 0.5px solid #3f3f3f;
+  display: inline-block;
+  margin: 50px 0 100px 0;
+}
+#philosophy .philosophy-div2:after {
+  content: "";
+  width: 70vw;
+  border: 0.5px solid #3f3f3f;
+  display: inline-block;
+  margin: 100px 0 50px 0;
+}
+#philosophy .philosophy-div3 {
+  padding: 30px 0 10px 0;
+  transform: translateY(-10px);
+}
+#philosophy .philosophy-div3 h3 {
+  margin: 0 0 50px 0;
+}
+#philosophy .philosophy-div3 div {
+  margin: 16px auto;
+  text-align: center;
+  display: block;
+}
+#philosophy .philosophy-div3 div p {
+  text-align: left;
+  display: inline-block;
+  max-width: 70vw;
+}
+#philosophy .wave-bottom {
+  transform: translateY(-10px);
+  background-color: #f2f0e9;
+  margin-bottom: -10px;
+}
+
+#facility {
+  background-color: #f2f0e9;
+  text-align: center;
+  padding-top: 100px;
+}
+#facility .content-title {
+  margin-bottom: 100px;
+}
+#facility .f-descriptin-top {
+  display: flex;
+  justify-content: center;
+}
+#facility .f-descriptin-top img {
+  width: 500px;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 50px;
+}
+#facility .f-descriptin-top div {
+  width: 500px;
+  text-align: center;
+}
+#facility .f-descriptin-top div h3 {
+  margin: 20px 0 30px 0;
+}
+#facility .f-descriptin-top div p {
+  line-height: 35px;
+}
+#facility .f-descriptin-middle {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: 150px auto 0 auto;
+}
+#facility .f-descriptin-middle h3 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#facility .f-descriptin-middle div {
+  width: 30%;
+  padding: 20px 20px 40px 20px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+#facility .f-descriptin-middle div img {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+#facility .f-description-bottom {
+  max-width: 1100px;
+  width: 70vw;
+  margin: 150px auto 0 auto;
+  padding-bottom: 100px;
+}
+#facility .f-description-bottom h3 {
+  margin-bottom: 50px;
+}
+#facility .f-description-bottom table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 2rem;
+  border: 2px #a4a4a4 solid;
+}
+#facility .f-description-bottom table tr {
+  border-bottom: solid 2px #a4a4a4;
+}
+#facility .f-description-bottom table tr:last-child {
+  border-bottom: none;
+}
+#facility .f-description-bottom table th {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #69B0AC;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+#facility .f-description-bottom table th:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -10px;
+  border-left: 10px solid #69B0AC;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+#facility .f-description-bottom table td {
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: white;
+  padding: 10px 0;
+}
+
+#page-service {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/27765628_s.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 260px;
+  font-size: 6rem;
+  font-family: "Zen Maru Gothic", serif;
+  color: white;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: #D0596E rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+#service {
+  text-align: center;
+  margin-top: 200px;
+  transform: translateY(10px);
+}
+#service .wave-bottom {
+  transform: translateY(-10px);
+  background-color: #f2f0e9;
+  margin-bottom: -10px;
+}
+#service .service-wrap {
+  transform: translateY(-10px);
+  background-color: white;
+}
+#service .service-top h2 {
+  line-height: 60px;
+}
+#service .service-top p {
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 50px 0;
+  line-height: 35px;
+}
+#service .service-middle h3 {
+  padding: 150px 0 90px 0;
+}
+#service .service-middle div {
+  max-width: 70vw;
+  margin: 0 auto 75px auto;
+}
+#service .service-middle div h4 {
+  float: left;
+  font-size: 2.5rem;
+}
+#service .service-middle div h4:before {
+  content: "";
+  border: 2px #69B0AC solid;
+  margin-right: 5px;
+}
+#service .service-middle div p {
+  margin: 30px 0;
+  text-align: left;
+  padding-left: 50px;
+  line-height: 35px;
+}
+#service .service-bottom h3 {
+  margin: 70px 0;
+}
+#service .service-bottom div .sb-icon h4 {
+  margin-bottom: 30px;
+  font-size: 2.3rem;
+  font-family: "Zen Maru Gothic", serif;
+}
+#service .service-bottom div .sb-icon div {
+  height: 140px;
+  width: 140px;
+  background-color: #69B0AC;
+  padding: 20px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+#service .service-bottom div .sb-icon div img {
+  height: 100px;
+  width: 100px;
+}
+#service .service-bottom div p {
+  border-bottom: 1px #69B0AC solid;
+}
+#service .service-bottom div p:nth-child(2) {
+  text-align: right;
+}
+#service .service-bottom div p:nth-child(3) {
+  text-align: right;
+}
+#service .service-bottom div p:nth-child(4) {
+  text-align: left;
+}
+#service .service-bottom div p:nth-child(5) {
+  text-align: left;
+}
+#service .service-bottom div p:nth-child(6) {
+  text-align: center;
+}
+#service .service-bottom div p span {
+  font-size: 1.5rem;
+}
+#service .service-bottom .sb-up {
+  position: relative;
+  margin-bottom: 250px;
+}
+#service .service-bottom .sb-up p:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  right: calc(50% + 130px);
+}
+#service .service-bottom .sb-up p:nth-child(3) {
+  position: absolute;
+  top: 150px;
+  right: calc(50% + 130px);
+}
+#service .service-bottom .sb-up p:nth-child(4) {
+  position: absolute;
+  top: 30px;
+  left: calc(50% + 130px);
+}
+#service .service-bottom .sb-up p:nth-child(5) {
+  position: absolute;
+  top: 150px;
+  left: calc(50% + 130px);
+}
+#service .service-bottom .sb-up p:nth-child(6) {
+  position: absolute;
+  top: 250px;
+  left: calc(50% - 127px);
+}
+#service .service-bottom .sb-left {
+  position: relative;
+  margin-bottom: 150px;
+}
+#service .service-bottom .sb-left p:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  right: calc(50% + 130px);
+}
+#service .service-bottom .sb-left p:nth-child(3) {
+  position: absolute;
+  top: 150px;
+  right: calc(50% + 130px);
+}
+#service .service-bottom .sb-left p:nth-child(4) {
+  position: absolute;
+  top: 30px;
+  left: calc(50% + 130px);
+}
+#service .service-bottom .sb-left p:nth-child(5) {
+  position: absolute;
+  top: 150px;
+  left: calc(50% + 130px);
+}
+#service .service-bottom .sb-right {
+  position: relative;
+  padding-bottom: 100px;
+}
+#service .service-bottom .sb-right p:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  right: calc(50% + 130px);
+}
+#service .service-bottom .sb-right p:nth-child(3) {
+  position: absolute;
+  top: 150px;
+  right: calc(50% + 130px);
+}
+#service .service-bottom .sb-right p:nth-child(4) {
+  position: absolute;
+  top: 30px;
+  left: calc(50% + 130px);
+}
+#service .service-bottom .sb-right p:nth-child(5) {
+  position: absolute;
+  top: 150px;
+  left: calc(50% + 130px);
+}
+
+#flow {
+  padding-top: 100px;
+  background-color: #f2f0e9;
+  padding-bottom: 150px;
+}
+#flow h2 {
+  margin-bottom: 100px;
+  text-align: center;
+}
+#flow .flow-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+#flow .flow-content ul {
+  padding: 0;
+}
+#flow .flow-content li {
+  list-style-type: none;
+}
+#flow .flow-content dd {
+  margin-left: 0;
+  font-size: 2rem;
+}
+#flow .flow > li {
+  position: relative;
+  list-style: none;
+}
+#flow .flow > li:not(:last-child) {
+  margin-bottom: 40px;
+}
+#flow .flow > li dl {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #69B0AC;
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
+}
+#flow .flow > li:not(:last-child) dl::before,
+#flow .flow > li:not(:last-child) dl::after {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#flow .flow > li:not(:last-child) dl::before {
+  border-width: 22px;
+  border-top-color: #69B0AC;
+}
+#flow .flow > li:not(:last-child) dl::after {
+  border-width: 20px;
+  border-top-color: #fff;
+}
+#flow .flow > li dl dt {
+  font-size: 2rem;
+  font-weight: 600;
+  flex-basis: 20%;
+  margin-right: 2vw;
+  text-align: center;
+  min-width: 14vw;
+}
+#flow .flow > li dl dt .icon01 {
+  font-size: 0.6em;
+  color: #fff;
+  background: #69B0AC;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+}
+@media (max-width: 650px) {
+  #flow .flow > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  #flow .flow > li dl {
+    display: block;
+    padding: 10px 15px;
+  }
+  #flow .flow > li dl dt {
+    margin-right: 0;
+  }
+  #flow .flow > li dl dt .icon01 {
+    font-size: 0.7em;
+  }
+}
+
+#to-contact-service {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/22284977_s.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+#to-contact-service h3 {
+  margin-bottom: 30px;
+}
+#to-contact-service p {
+  line-height: 35px;
+  margin: 10px 0 5px 0;
+}
+#to-contact-service a {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#recruit-hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #41fff6, #fd6c87);
+  z-index: 999;
+  position: absolute;
+  top: 0;
+}
+#recruit-hero .left {
+  position: absolute;
+  right: 50%;
+  top: 15%;
+  width: 40vw;
+  color: #3f3f3f;
+  text-shadow: 0 0 10px white;
+}
+#recruit-hero .left h1 {
+  font-size: 6rem;
+}
+#recruit-hero .left div {
+  position: relative;
+}
+#recruit-hero .left div img {
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+#recruit-hero .left div img:nth-child(1) {
+  position: absolute;
+  width: 350px;
+  top: 50px;
+}
+#recruit-hero .left div img:nth-child(2) {
+  position: absolute;
+  width: 350px;
+  top: 300px;
+  left: 30%;
+}
+#recruit-hero .right {
+  position: absolute;
+  left: 53%;
+  top: 10vh;
+  height: 80vh;
+  width: 35vw;
+  background-color: #f2f0e9;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+#recruit-hero .right h3 {
+  margin-bottom: 30px;
+}
+
+#points {
+  margin-top: 100vh;
+  text-align: center;
+}
+#points h2 {
+  margin: 100px auto;
+}/*# sourceMappingURL=default.css.map */
