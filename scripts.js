@@ -1,4 +1,3 @@
-
 // 動きのきっかけとなるアニメーションの名前を定義
 function fadeAnime() {
   //ふわっと動くきっかけのクラス名と動きのクラス名の設定
@@ -33,44 +32,77 @@ $(window).scroll(function () {
   fadeAnime(); /* アニメーション用の関数を呼ぶ*/
 }); // ここまで画面をスクロールをしたら動かしたい場合の記述
 
-
-
-
 function delayScrollAnime() {
-	var time = 0.2;//遅延時間を増やす秒数の値
-	var value = time;
-	$('.delayScroll').each(function () {
-		var parent = this;					//親要素を取得
-		var elemPos = $(this).offset().top;//要素の位置まで来たら
-		var scroll = $(window).scrollTop();//スクロール値を取得
-		var windowHeight = $(window).height();//画面の高さを取得
-		var childs = $(this).children();	//子要素を取得
+  var time = 0.2; //遅延時間を増やす秒数の値
+  var value = time;
+  $(".delayScroll").each(function () {
+    var parent = this; //親要素を取得
+    var elemPos = $(this).offset().top; //要素の位置まで来たら
+    var scroll = $(window).scrollTop(); //スクロール値を取得
+    var windowHeight = $(window).height(); //画面の高さを取得
+    var childs = $(this).children(); //子要素を取得
 
-		if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {//指定領域内にスクロールが入ったらまた親要素にクラスplayがなければ
-			$(childs).each(function () {
+    if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {
+      //指定領域内にスクロールが入ったらまた親要素にクラスplayがなければ
+      $(childs).each(function () {
+        if (!$(this).hasClass("fadeUp")) {
+          //アニメーションのクラス名が指定されているかどうかをチェック
 
-				if (!$(this).hasClass("fadeUp")) {//アニメーションのクラス名が指定されているかどうかをチェック
+          $(parent).addClass("play"); //親要素にクラス名playを追加
+          $(this).css("animation-delay", value + "s"); //アニメーション遅延のCSS animation-delayを追加し
+          $(this).addClass("fadeUp"); //アニメーションのクラス名を追加
+          value = value + time; //delay時間を増加させる
 
-					$(parent).addClass("play");	//親要素にクラス名playを追加
-					$(this).css("animation-delay", value + "s");//アニメーション遅延のCSS animation-delayを追加し
-					$(this).addClass("fadeUp");//アニメーションのクラス名を追加
-					value = value + time;//delay時間を増加させる
-
-					//全ての処理を終わったらplayを外す
-					var index = $(childs).index(this);
-					if((childs.length-1) == index){
-						$(parent).removeClass("play");
-					}
-				}
-			})
-		}else {
-			$(childs).removeClass("fadeUp");//アニメーションのクラス名を削除
-			value = time;//delay初期値の数値に戻す
-		}
-	})
+          //全ての処理を終わったらplayを外す
+          var index = $(childs).index(this);
+          if (childs.length - 1 == index) {
+            $(parent).removeClass("play");
+          }
+        }
+      });
+    } else {
+      $(childs).removeClass("fadeUp"); //アニメーションのクラス名を削除
+      value = time; //delay初期値の数値に戻す
+    }
+  });
 }
 
 // 画面をスクロールをしたら動かしたい場合の記述
-	$(window).scroll(function (){
-		delayScrollAnime();/* アニメーション用の関数を呼ぶ*/
-	});// ここまで画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+  delayScrollAnime(); /* アニメーション用の関数を呼ぶ*/
+}); // ここまで画面をスクロールをしたら動かしたい場合の記述
+
+
+//任意のタブにURLからリンクするための設定
+function GethashID (hashIDName){
+	if(hashIDName){
+		//タブ設定
+		$('.tab li').find('a').each(function() { //タブ内のaタグ全てを取得
+			var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得	
+			if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
+				var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
+				$('.tab li').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+				$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
+				//表示させるエリア設定
+				$(".area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+				$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加	
+			}
+		});
+	}
+}
+
+//タブをクリックしたら
+$('.tab a').on('click', function() {
+	var idName = $(this).attr('href'); //タブ内のリンク名を取得	
+	GethashID (idName);//設定したタブの読み込みと
+	return false;//aタグを無効にする
+});
+
+
+// 上記の動きをページが読み込まれたらすぐに動かす
+$(window).on('load', function () {
+    $('.tab li:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
+    $('.area:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
+	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
+	GethashID (hashName);//設定したタブの読み込み
+});
