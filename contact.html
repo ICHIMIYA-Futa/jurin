@@ -25,7 +25,17 @@
       <h1>ぐるーぷほーむ樹林</h1>
     </a>
     <nav>
-      <ul id="g-navi">
+      <ul id="g-nav">
+        <li><a href="about">樹林について</a></li>
+        <li><a href="service">サービス内容</a></li>
+        <li><a href="posts">おしらせ・ブログ</a></li>
+        <li><a href="recruit">採用情報・エントリー</a></li>
+        <li><a href="contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="r-nav">
+      <ul>
         <li><a href="about">樹林について</a></li>
         <li><a href="service">サービス内容</a></li>
         <li><a href="posts">おしらせ・ブログ</a></li>
@@ -65,11 +75,11 @@
     </article>
   </main>
   <footer id="footer">
-    <img src="images/jurin-tree1.png" alt="">
+    <img src="images/tree-1.png" alt="">
     <nav>
       <ul id="f-navi">
         <li><a href="/">トップページ</a></li>
-        <li><a href="/about">樹林について</a></li>
+        <li><a href="about">樹林について</a></li>
         <li><a href="service">サービス内容</a></li>
         <li><a href="posts">おしらせ・ブログ</a></li>
         <li><a href="recruit">採用情報</a></li>
@@ -85,11 +95,12 @@
         <p>
           電話番号:050-8891-7200<br>
           住所:〒061-3223 北海道石狩市緑苑台東三条3-255<br>
+          <span class="res-map"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6755.663494839289!2d141.3438768089028!3d43.16419946553957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b25e2eb9e4cc9%3A0x82fffa425fd68efa!2z44Kw44Or44O844OX44Ob44O844Og5qi55p6X!5e0!3m2!1sja!2sjp!4v1700993598363!5m2!1sja!2sjp">Googleマップを開く</a></span>
           <br>
           © 有限会社 共生會
         </p>
       </div>
-      <iframe
+      <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6755.663494839289!2d141.3438768089028!3d43.16419946553957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b25e2eb9e4cc9%3A0x82fffa425fd68efa!2z44Kw44Or44O844OX44Ob44O844Og5qi55p6X!5e0!3m2!1sja!2sjp!4v1700993598363!5m2!1sja!2sjp"
         width="450" height="230" style="border:1px solid #3f3f3f;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -101,7 +112,6 @@
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
   <script src="particles.js"></script>
-  <script src="scripts-top.js"></script>
   <script src="scripts.js"></script>
 </body>
 
