@@ -19,8 +19,9 @@
 </head>
 
 <body>
+
   <div id="splash">
-    <img class="splash-logo" src="images/jurin-tree2.png" alt="ぐるーぷほーむ樹林のロゴ">
+    <img class="splash-logo" src="images/tree-2.png" alt="ぐるーぷほーむ樹林のロゴ">
     <div id="splash_text"></div>
   </div>
 
@@ -29,7 +30,17 @@
       <h1>ぐるーぷほーむ樹林</h1>
     </a>
     <nav>
-      <ul id="g-navi">
+      <ul id="g-nav">
+        <li><a href="about">樹林について</a></li>
+        <li><a href="service">サービス内容</a></li>
+        <li><a href="posts">おしらせ・ブログ</a></li>
+        <li><a href="recruit">採用情報・エントリー</a></li>
+        <li><a href="contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="r-nav">
+      <ul>
         <li><a href="about">樹林について</a></li>
         <li><a href="service">サービス内容</a></li>
         <li><a href="posts">おしらせ・ブログ</a></li>
@@ -38,15 +49,21 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <article>
 
       <section id="hero">
-        <div>
+        <div class="slide">
+          <div class="slide-image"></div>
+          <div class="slide-image"></div>
+          <div class="slide-image"></div>
+        </div>
+        <div class="hero-text">
           <h2>一緒に、一歩ずつ</h2>
           <p>〜 新たな家族と共に未来へ 〜</p>
         </div>
-        <img src="images/sign.png" alt="">
+        <img src="images/sign.png" alt="樹林の看板ロゴ">
       </section>
       <section id="intro">
         <div id="particles-js">
@@ -55,7 +72,7 @@
             <h2 class="content-title">ぐるーぷほーむ樹林について</h2>
 
             <section class="intro-top fadeUpTrigger">
-              <img src="images/27772935_s.jpg" alt="">
+              <img src="images/top-3.JPG" alt="樹林の様子">
               <div>
                 <h3>皆に安心と充実を</h3>
                 <p>私たちは、<br>
@@ -75,22 +92,16 @@
             </section>
 
             <section class="intro-bottom">
-              <img class="intro-bottom-img1" src="images/27765628_s.jpg" alt="笑顔の介護職員">
-              <img class="intro-bottom-img2" src="images/22284977_s.jpg" alt="入居者と職員">
+              <img class="intro-bottom-img1" src="images/top-1.JPG" alt="樹林の様子">
+              <img class="intro-bottom-img2" src="images/top-2.JPG" alt="入居者と職員">
               <div class="delayScroll">
                 <h3>樹林ならではの穏やかな生活</h3>
-                <p class="box">
-                  水分摂取の目標を体重の3%に設定し毎日しっかり水分をとってもらい、
-                  便秘解消や体調維持を心がけています。
-                </p>
-                <p class="box">
-                  毎食後の口腔ケアを実施。物が飲み込みにくくなる、
-                  いわゆる「えん下障害」の予防に努めています。
-                </p>
-                <p class="box">
-                  入居者様一人ひとりの能力などを見極めながら、
-                  日常生活において適切な見守りや介助を行っています。
-                </p>
+                <span class="res-sp ib-1">1</span>
+                <p class="box">水分摂取の目標を体重の3%に設定し毎日しっかり水分をとってもらい、便秘解消や体調維持を心がけています。</p>
+                <span class="res-sp ib-2">2</span>
+                <p class="box">毎食後の口腔ケアを実施。物が飲み込みにくくなる、いわゆる「えん下障害」の予防に努めています。</p>
+                <span class="res-sp ib-3">3</span>
+                <p class="box">入居者様一人ひとりの能力などを見極めながら、日常生活において適切な見守りや介助を行っています。</p>
                 <a href="about" class="btnarrow">サービス内容を詳しく見る</a>
               </div>
             </section>
@@ -99,17 +110,18 @@
       </section>
       <section id="slide-show">
         <ul class="slider">
-          <li><img src="images/26653885_s.jpg" alt=""></li>
-          <li><img src="images/27770753_m.jpg" alt=""></li>
-          <li><img src="images/3040738_s.jpg" alt=""></li>
-          <li><img src="images/3081106_s.jpg" alt=""></li>
-          <li><img src="images/22284977_s.jpg" alt=""></li>
+          <li><img src="images/slide-1.JPG" alt=""></li>
+          <li><img src="images/slide-2.JPG" alt=""></li>
+          <li><img src="images/slide-3.JPG" alt=""></li>
+          <li><img src="images/slide-4.JPG" alt=""></li>
+          <li><img src="images/slide-5.JPG" alt=""></li>
           <!--/slider-->
         </ul>
       </section>
       <section id="greeting" class="fadeUpTrigger">
         <h2 class="content-title">代表挨拶</h2>
         <div class="greeting-wrap">
+          <img class="greeting-img2" src="images/manager.JPG" alt="ぐるーぷほーむ樹林代表">
           <p>わたしたちは、<br>
             介護業界のイメージ向上を目指し、<br>
             日々努力を重ねています。<br>
@@ -125,7 +137,7 @@
             <br>
             ぐるーぷほーむ樹林 代表 [名前]
           </p>
-          <img src="images/27770753_l.jpg" alt="ぐるーぷほーむ樹林代表">
+          <img class="greeting-img1" src="images/manager.JPG" alt="ぐるーぷほーむ樹林代表">
         </div>
       </section>
 
@@ -149,7 +161,7 @@
   </main>
 
   <footer id="footer">
-    <img src="images/jurin-tree1.png" alt="">
+    <img src="images/tree-1.png" alt="">
     <nav>
       <ul id="f-navi">
         <li><a href="/">トップページ</a></li>
@@ -169,11 +181,13 @@
         <p>
           電話番号:050-8891-7200<br>
           住所:〒061-3223 北海道石狩市緑苑台東三条3-255<br>
+          <span class="res-map"><a
+              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6755.663494839289!2d141.3438768089028!3d43.16419946553957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b25e2eb9e4cc9%3A0x82fffa425fd68efa!2z44Kw44Or44O844OX44Ob44O844Og5qi55p6X!5e0!3m2!1sja!2sjp!4v1700993598363!5m2!1sja!2sjp">Googleマップを開く</a></span>
           <br>
           © 有限会社 共生會
         </p>
       </div>
-      <iframe
+      <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6755.663494839289!2d141.3438768089028!3d43.16419946553957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b25e2eb9e4cc9%3A0x82fffa425fd68efa!2z44Kw44Or44O844OX44Ob44O844Og5qi55p6X!5e0!3m2!1sja!2sjp!4v1700993598363!5m2!1sja!2sjp"
         width="450" height="230" style="border:1px solid #3f3f3f;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
